@@ -7,7 +7,7 @@ import express from "express";
 // import cors
 import cors from "cors";
 // import routes
-import Router from "./routes/routes.js";
+import router from "./routes/routes.js";
 
 //add https support
 // import http from "http";
@@ -45,7 +45,7 @@ app.use(cors());
 
 // use router
 //
-app.use(Router);
+app.use(router);
 
 let host = process.env.HOST;
 let port = process.env.PORT;
